@@ -18,29 +18,21 @@ html {
     grid-template-columns: 1fr 4fr;
   }
 
-  .sidebar {
-    display: grid;
-    grid-row: 1 / 3;
-    background-color: lightseagreen;
-    height: 100vh;
-  }
-
 .header {
   background-color: white;
   margin: 1em;
-  display: grid;
 }
 
 .top {
   display: grid;
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 2fr 1fr;
   color: black;
 }
 
 .search-bar {
   display: flex;
   gap: 1em;
-  margin-top: .75em;
+  margin: .5em 0 0 1em;
 }
 
 label {
@@ -62,8 +54,10 @@ input {
 
 .account {
   display: flex;
-  gap: 1.5em;
-  justify-content: center;
+  justify-content: flex-end;
+  gap: .5em;
+  margin-right: 1em;
+  white-space: nowrap;
 }
 
 .bell {
@@ -72,6 +66,8 @@ input {
   height: 25px;
   width: 25px;
   margin-top: 12px;
+  display: flex;
+  margin-right: 20px;
 }
 
 .profile {
@@ -83,21 +79,45 @@ input {
 
 .profile-picture {
   background :url(image/face-man-profile.svg);
-  width: 50px;
+  width: 30px;
   height: 2em;
   margin-top: 10px;
   background-repeat: no-repeat;
 }
 
 .bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
 }
 
-.bottom .user-content .yessir {
+.heading-picture {
+  background :url(image/face-man-profile.svg);
   width: 60px;
   height: 60px;
   background-repeat: no-repeat;
+}
+
+.user-content {
+    display: flex;
+}
+
+.user-info {
+    margin-top: 8px;
+}
+
+.user1 {
+    font-weight: 900;
+}
+
+.user2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.user3 {
+    display: flex;
+    gap: 2em;
 }
 
 .header > *,
@@ -108,12 +128,19 @@ input {
 }
 
 
-button {
+.btn {
   background: #1dbdf2;
-  padding: .5em;
-  width: 7.5em;
+  padding: .2em;
   border-radius: 15px;
+  height: 10px
 }
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 3;
+    background-color: lightseagreen;
+    height: 100vh;
+  }
 
 .projectCards {
   background-color: rgb(51, 101, 152);
