@@ -5,6 +5,7 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
     margin: 0px;
+    color: white;
   }
 
   body {
@@ -24,3 +25,45 @@ html {
     height: 100vh;
   }
 
+.header {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+label {
+  color: black;
+  margin: 50px;
+  
+}
+
+.header > *,
+.user1,
+.user2,
+.user3 {
+  color: black;
+}
+
+
+button {
+  background: #1dbdf2;
+  padding: .5em;
+  width: 7.5em;
+  border-radius: 15px;
+}
+
+.projectCards {
+  background-color: rgb(51, 101, 152);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  
+}
+
+.card {
+  border: 2px solid black;
+}
+
+.title,
+p {
+  color: black;
+}
