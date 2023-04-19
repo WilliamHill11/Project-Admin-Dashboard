@@ -4,12 +4,12 @@ html {
 
   *, *:before, *:after {
     box-sizing: inherit;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     color: white;
   }
 
   body {
-    background-color: brown;
     height: 100vh;
   }
 
@@ -27,14 +27,77 @@ html {
 
 .header {
   background-color: white;
+  margin: 1em;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  color: black;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1em;
+  margin-top: .75em;
 }
 
 label {
   color: black;
-  margin: 50px;
+  padding: 1em;
+  background-image: url(image/magnify.svg);
+  background-repeat: no-repeat;
+}
+
+input {
+  background-color: lightgrey;
+  color: black;
+  width: 80%;
+  height: 2em;
+  border-radius: 1em;
+  padding: 1em;
   
+}
+
+.account {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+.bell {
+  background-image: url(image/bell.svg);
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+  margin-top: 12px;
+}
+
+.profile {
+  color: black;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.profile-picture {
+  background :url(image/face-man-profile.svg);
+  width: 50px;
+  height: 2em;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bottom .user-content .yessir {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
 }
 
 .header > *,
